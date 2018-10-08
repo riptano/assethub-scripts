@@ -2,7 +2,7 @@
 
 TOPIC=${TOPIC:?A topic is required}
 
-./local-kafka
+./start-kafka
 local/kafka/bin/kafka-topics.sh --create \
  --zookeeper localhost:2181 \
  --replication-factor 1 \
