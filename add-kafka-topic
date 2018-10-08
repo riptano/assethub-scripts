@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TOPIC=${TOPIC:?A topic is required}
+TOPIC=${1:?A topic is required}
 
 ./start-kafka
 local/kafka/bin/kafka-topics.sh --create \
